@@ -1,0 +1,59 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Beagle' %}">Beagle</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Chihuahua' %}">Chihuahua</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Corgi' %}">Corgi</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Golden_retriever' %}">Golden-retriever</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_German_shepherd' %}">German-shepherd</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Siberian_Husky' %}">Siberian-husky</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Shih_tzu' %}">Shih-tzu</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Dalmatian' %}">Dalmatian</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_dog_Samoyed' %}">Samoyed</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/Samoyed.webp' %}"><br>
+            <h1 style="text-align: center;">พฤติกรรมของสุนัขพันธุ์ Samoyed:</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สุนัขพันธุ์ Samoyed เป็นสุนัขขนาดกลางที่มีขนสีขาวหนา 2 ชั้น
+                พวกมันเป็นสุนัขประเภทสปิตซ์ซึ่งได้ชื่อมาจากชนเผ่าซามอยดิกแห่งไซบีเรีย
+                พวกมันเป็นสัตว์เลี้ยงในบ้านซึ่งสืบเชื้อสายมาจาก Nenets Herding Laika ซึ่งช่วยในการต้อน ล่าสัตว์ ปกป้อง
+                และลากเลื่อน
+
+                สุนัขพันธุ์ Samoyed ขึ้นชื่อเรื่องความอ่อนโยน เข้ากับเด็กได้ดี ชอบเล่นซนเป็นที่สุด
+                และชื่นชอบที่ได้เป็นส่วนหนึ่งของครอบครัวด้วย เนื่องจากมีพลังงานล้นเหลือ
+                จึงไม่เหมาะกับการเลี้ยงในพื้นที่แคบ และต้องออกกำลังกายอย่างเพียงพอทุกวัน
+
+                ลักษณะนิสัยของสุนัขพันธุ์ Samoyed:
+
+                เป็นมิตรและรักใคร่ สุนัขพันธุ์ Samoyed เป็นสุนัขที่ร่าเริงและเข้ากับผู้คนได้ดี
+                พวกมันชอบเล่นกับเด็กและสัตว์เลี้ยงอื่นๆ
+                ฉลาดและเชื่อฟัง สุนัขพันธุ์ Samoyed เป็นสุนัขที่ฉลาดและสามารถเรียนรู้คำสั่งได้อย่างรวดเร็ว
+                พวกมันชอบที่จะได้รับการฝึกฝนและเรียนรู้สิ่งใหม่ๆ
+                ต้องการการเอาใจใส่ สุนัขพันธุ์ Samoyed เป็นสุนัขที่รักครอบครัวและต้องการความรักและความเอาใจใส่จากเจ้าของ
+                พวกมันไม่ชอบการถูกทิ้งให้อยู่บ้านตามลำพัง
+            </p>
+            <h1 style="text-align: center;">การดูแลสุนัขพันธุ์ Samoyed:</h1>
+            <b style="color: #00aea5;">1. สุขภาพ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แม้ว่าซามอยด์จะเป็นสุนัขที่มีสุขภาพแข็งแรง แต่ขอแนะนำให้พาพวกเค้าไปตรวจสุขภาพเป็นประจำ
+                ไม่ว่าจะอยู่ในช่วงวัยลูกสุนัขหรือช่วงโตเต็มวัย โดยหมั่นเช็กความผิดปกติของสะโพกและข้อเข่า
+                รวมถึงการทำงานของหัวใจและดวงตา</p><br>
+                <b style="color: #00aea5;">2. กรูมมิ่ง</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สุนัขซามอยด์มีขนสีขาวสวยงาม ขนสองชั้นหนาและฟู ปลายขนชั้นนอกจะมีสีเทาเงิน ยาว
+                ตรงและค่อนข้างหยาบ ส่วนขนชั้นในมีความหนาคล้ายขนแกะ พวกเค้าจะผลัดขนปีละครั้งหรือสองครั้ง
+                ซึ่งทำให้การแปรงขนค่อนข้างยาก แต่ก็จำเป็นต้องทำอย่างสม่ำเสมอ
+
+            </p><br>
+            <b style="color: #00aea5;">3. การออกกำลังกาย</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ซามอยด์มีพลังงานสูงมากและชอบเล่นเป็นที่สุด เจ้าของต้องพาพวกเค้าไปเดินเล่นเป็นประจำ
+                อย่างไรก็ตาม ควรใช้สายจูงตลอดการเดินเล่น เพื่อป้องกันพวกเค้าวิ่งหนีด้วยความคึก</p><br>
+                <b style="color: #00aea5;">4. โภชนาการ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;น้องหมาพันธุ์นี้ต้องการอาหารที่มีโปรตีน ไขมันดี วิตามิน และแร่ธาตุในปริมาณที่เหมาะสม 
+                ควรเลือกอาหารสุนัขที่มีคุณค่าทางโภชนาการครบถ้วนและสมดุล สามารถให้ขนมเป็นรางวัลระหว่างการฝึกได้ แต่ต้องตรวจสอบให้แน่ใจว่าปริมาณแคลอรีที่ได้รับต่อวันจะไม่มากเกินไป</p><br>
+                <b style="color: #00aea5;">5. การฝึก</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ด้วยความเฉลียวฉลาดและพร้อมที่จะเรียนรู้อยู่เสมอ ทำให้ซามอยด์ตอบสนองต่อการฝึกได้ดี แต่ในขณะเดียวกันก็มีความหัวดื้อ 
+                ผู้ฝึกจึงต้องใช้ความอดทนและฝึกแบบเชิงบวก เน้นการให้รางวัล จะเป็นขนมชิ้นโปรดหรือคำชมก็ได้ ทั้งนี้ควรเริ่มฝึกการเข้าสังคมให้ซามอยด์ตั้งแต่ยังเด็ก</p><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

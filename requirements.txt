@@ -1,0 +1,4 @@
+Django
+Django-crispy-forms
+python-slugify
+pip install crispy-bootstrap4

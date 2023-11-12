@@ -1,0 +1,232 @@
+{% extends 'app_general/components/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <img src="{% static 'app_general/Untitled-1.jpg' %}" width="1296 " class="img-fluid" alt="Responsive image">
+    <div class="row">
+        <div class="col-sm-3" style="margin-top: 23px;">
+            <h1 class="bloglefttexthead">&nbsp;Pet Blog</h1>
+            <img class="blog1img" src="{% static 'app_general/Blog_img1.webp' %}" alt="Blog1">
+            <br>
+            <p><a href="https://salehere.co.th/articles/cute-pets">รวม 13 สัตว์เลี้ยงน่ารัก ไซซ์จิ๋ว น่าเลี้ยงไม่มีขน
+                    กันยายน 2022 -Sale Here</a></p><br>
+            <img class="blog1img" src="{% static 'app_general/Blog_img2.webp' %}" alt="Blog2">
+            <br>
+            <p><a href="https://salehere.co.th/articles/tiny-animal-cute">รวม 15 สัตว์เลี้ยงสุดน่ารักกก ไซซ์มินิ
+                    เลี้ยงง่าย ราคาจับต้องได้ ตุลาคม 2022 -Sale Here</a></p>
+            <h1 class="underline11"> </h1>
+            <p class="bloglefttext">ติดต่อเรา</p>
+            <p class="bloglefttext">630910165 <br> 630910172 <br> 630910190</p>
+            <p class="bloglefttext">ติดตามเรา</p>
+            <a href="https://www.facebook.com/"><img src="{% static 'app_general/facebook_icon.png' %}"
+                    alt="facebook_icon" style="width:42px;height:42px;"></a>
+            <a href="https://www.instagram.com/"><img src="{% static 'app_general/instagram_icon.webp' %}"
+                    alt="instagram_icon" style="width:42px;height:42px;"></a><br><br>
+        </div>
+        <div class="col bg-body">
+            <div class="row">
+                <div class="col-lg-15">
+                        <h1 style="border-bottom: 2px solid #00aea5;">โปรโมชั่นประจำเดือน</h1>
+                        <a href="{% url 'products' %}"  style="margin-left: 89%; color: red;">สินค้าทั้งหมด</a>
+                        <br>
+                    <div class="row">
+                        <div class="col-lg-3">
+                        <div class="card">
+                            <a href="{% url 'products' %}?categoryid=1">
+                                <img src="{% static 'app_general/th-11134207-7r991-ln89cs5frkg9c1.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                            </a>
+                            <div class="card-body" style="font-size: 12px; color:#414141">
+                                <h5><a href="{% url 'products' %}?categoryid=1" style="text-decoration: none; color:#414141; font-size: 12px;">เคลลี่แอนด์โค เดลลี่โดส อาหารสุนัขฟรีซดราย เกรดกลูเตนฟรีพรีเมี่ยมโฮลิสติก สูตรไก่ 907 กรัม</a></h5>
+                                <div class="d-flex">
+                                    <div style="color: #00aea5;">Price:&nbsp;1,208.00&nbsp;บาท</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <a href="{% url 'products' %}?categoryid=1">
+                                    <img src="{% static 'app_general/th-11134207-7r98u-lmo13zz0eyo790.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                                </a>
+                                <div class="card-body" style="font-size: 12px; color:#414141">
+                                    <h5><a href="{% url 'products' %}?categoryid=1" style="text-decoration: none; color:#414141; font-size: 12px;">เคลลี่แอนด์โค เกรดกลูเตนฟรีพรีเมี่ยมโฮลิสติก</a></h5>
+                                    <div class="d-flex">
+                                        <div style="color: #00aea5;">Price:&nbsp;999.00&nbsp;บาท</div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <a href="{% url 'products' %}?categoryid=1">
+                                    <img src="{% static 'app_general/th-11134207-7r98u-lmo13zz0eyo790_YXAKgFP.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                                </a>
+                                <div class="card-body" style="font-size: 12px; color:#414141">
+                                    <h5><a href="{% url 'products' %}?categoryid=1" style="text-decoration: none; color:#414141; font-size: 12px;">Tailybuddy Pet Shop Solid Gold Leaping Waters อาหารเม็ดสุนัขโต โฮลิสติก สูตรซีฟู้ด 9.98kg</a></h5>
+                                    <div class="d-flex">
+                                        <div style="color: #00aea5;">Price:&nbsp;3,800.00&nbsp;บาท</div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <a href="{% url 'products' %}?categoryid=3">
+                                    <img src="{% static 'app_general/th-11134207-7qul9-li40p9jlt8cxf0.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                                </a>
+                                <div class="card-body" style="font-size: 12px; color:#414141">
+                                    <h5><a href="{% url 'products' %}?categoryid=3" style="text-decoration: none; color:#414141; font-size: 12px;">อาหารนก Boost Bird สูตร Fruit Mix ผลไม้รวม ขนาดทดลอง</a></h5>
+                                    <div class="d-flex">
+                                        <div style="color: #00aea5;">Price:&nbsp;390.00&nbsp;บาท</div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-15">
+                    <h1 style="border-bottom: 2px solid #00aea5;">สินค้าใหม่</h1>
+                    <a href="{% url 'products' %}"  style="margin-left: 89%; color: red;">สินค้าทั้งหมด</a>
+                    <br>
+                <div class="row">
+                    <div class="col-lg-3">
+                    <div class="card">
+                        <a href="{% url 'products' %}?categoryid=4">
+                            <img src="{% static 'app_general/th-11134207-7qul8-li6vnonlqf81e5.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                        </a>
+                        <div class="card-body" style="font-size: 12px; color:#414141">
+                            <h5><a href="{% url 'products' %}?categoryid=4" style="text-decoration: none; color:#414141; font-size: 12px;">BOKDOK บ๊อกด๊อก อาหารหนูแฮมเตอร์ อาหารหนู แกสบี้ สูตรธัญพืชรวม 500 กรัม</a></h5>
+                            <div class="d-flex">
+                                <div style="color: #00aea5;">Price:&nbsp;300.00&nbsp;บาท</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <a href="{% url 'products' %}?categoryid=3">
+                                <img src="{% static 'app_general/th-11134207-7qul6-li40p9jlrtsh38.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                            </a>
+                            <div class="card-body" style="font-size: 12px; color:#414141">
+                                <h5><a href="{% url 'products' %}?categoryid=3" style="text-decoration: none; color:#414141; font-size: 12px;">อาหารนก Boost Bird. สูตร WHOLE GRAIN & VEGGIE FORMULA. ขนาดทดลอง</a></h5>
+                                <div class="d-flex">
+                                    <div style="color: #00aea5;">Price:&nbsp;390.00&nbsp;บาท</div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <a href="{% url 'products' %}?categoryid=5">
+                                <img src="{% static 'app_general/th-11134207-7qul2-lh6k8pcj3xtg77.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                            </a>
+                            <div class="card-body" style="font-size: 12px; color:#414141">
+                                <h5><a href="{% url 'products' %}?categoryid=5" style="text-decoration: none; color:#414141; font-size: 12px;">อาหารสุนัข Naturea - Wild Boar สูตรหมูป่าสเปน Premium Holistic สำหรับสุนัขโต ทุกสายพันธุ์ ขนาด 12 kg</a></h5>
+                                <div class="d-flex">
+                                    <div style="color: #00aea5;">Price:&nbsp;2,850.00&nbsp;บาท</div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <a href="{% url 'products' %}?categoryid=4">
+                                <img src="{% static 'app_general/th-11134207-7qul2-lgcd2truu91q9a.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                            </a>
+                            <div class="card-body" style="font-size: 12px; color:#414141">
+                                <h5><a href="{% url 'products' %}?categoryid=4" style="text-decoration: none; color:#414141; font-size: 12px;">อาหารเม่นแคระ maki Hedgehog Food ขนาด 700 กรัม ผลิตจากวัตถุดิบธรรมชาติ มีโปรตีนและแคลเซียม</a></h5>
+                                <div class="d-flex">
+                                    <div style="color: #00aea5;">Price:&nbsp;114.00&nbsp;บาท</div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-15">
+                <h1 style="border-bottom: 2px solid #00aea5;">สินค้าขายดี</h1>
+                <a href="{% url 'products' %}"  style="margin-left: 89%; color: red;">สินค้าทั้งหมด</a>
+                <br>
+            <div class="row">
+                <div class="col-lg-3">
+                <div class="card">
+                    <a href="{% url 'products' %}?categoryid=2">
+                        <img src="{% static 'app_general/th-11134201-7r98p-lnwtdslzrgbr7d.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                    </a>
+                    <div class="card-body" style="font-size: 12px; color:#414141">
+                        <h5><a href="{% url 'products' %}?categoryid=2" style="text-decoration: none; color:#414141; font-size: 12px;">Royal Canin Hairball Care 400g อาหารเม็ดแมวโต ดูแลปัญหาก้อนขน อายุ 1 ปีขึ้นไป</a></h5>
+                        <div class="d-flex">
+                            <div style="color: #00aea5;">Price:&nbsp;223.00&nbsp;บาท</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <a href="{% url 'products' %}?categoryid=3">
+                            <img src="{% static 'app_general/shoppingw.webp' %}" alt="รูปที่ 1" class="card-img-top">
+                        </a>
+                        <div class="card-body" style="font-size: 12px; color:#414141">
+                            <h5><a href="{% url 'products' %}?categoryid=3" style="text-decoration: none; color:#414141; font-size: 12px;">Nutribird อาหารนกลูกป้อนสูตรนกทั่วไป Nutribird A21 (Bird), 800g.</a></h5>
+                            <div class="d-flex">
+                                <div style="color: #00aea5;">Price:&nbsp;540.00&nbsp;บาท</div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <a href="{% url 'products' %}?categoryid=3">
+                            <img src="{% static 'app_general/sg-11134201-23010-5g37y55s5ulvac.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                        </a>
+                        <div class="card-body" style="font-size: 12px; color:#414141">
+                            <h5><a href="{% url 'products' %}?categoryid=3" style="text-decoration: none; color:#414141; font-size: 12px;">Nutribird อาหารนกลูกป้อนสูตรนกทั่วไป Nutribird A21 (Bird), 800g.</a></h5>
+                            <div class="d-flex">
+                                <div style="color: #00aea5;">Price:&nbsp;540.00&nbsp;บาท</div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <a href="{% url 'products' %}?categoryid=3">
+                            <img src="{% static 'app_general/sg-11134201-22100-0ac6cgbp93iv8f.jpg' %}" alt="รูปที่ 1" class="card-img-top">
+                        </a>
+                        <div class="card-body" style="font-size: 12px; color:#414141">
+                            <h5><a href="{% url 'products' %}?categoryid=3" style="text-decoration: none; color:#414141; font-size: 12px;">Nutribird อาหารนกลูกป้อนสูตรนกทั่วไป</a></h5>
+                            <div class="d-flex">
+                                <div style="color: #00aea5;">Price:&nbsp;589.00&nbsp;บาท</div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<style>
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-body h5 {
+        margin-bottom: 30px; /* เพื่อลบระยะห่างด้านล่างของ h5 */
+    }
+
+    .card-body .d-flex {
+        justify-content: space-between;
+    }
+</style>
+{% endblock %}

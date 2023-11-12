@@ -1,0 +1,54 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_a' %}">Budgie</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_b' %}">Canary</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_c' %}">Crimson rosella</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_d' %}">Finch</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_e' %}">Galah</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_f' %}">Lovebird</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_g' %}">Rainbow lorikeet</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_h' %}">Scarlet macaw</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_bird_i' %}">Sun conure</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/sun conure.jpg' %}"><br>
+            <h1 style="text-align: center;">พฤติกรรมของ Sun conure:</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นกซันคอนัวร์เป็นนกในตระกูลคอร์นัวที่มีถิ่นกำเนิดอยู่ไกลแสนไกล
+                ที่คาบสมุทรแคริบเบียน หรือใกล้กับเม็กซิโก พวกมันเป็นนกที่ชอบเรียนรู้ มีความซุกซนเป็นอย่างมาก
+                พวกมันชอบจิกนู่นแทะนี่จนบางทีก็ทำให้ข้าวของเสียหายหรือเจ้าของเจ็บตัวเล่น
+                แถมยังเป็นนกที่ชอบเรียกร้องความสนใจด้วยนะ เพราะมันจะชอบร้องเพลงขึ้นมาตอนเช้า
+            </p>
+            <h1 style="text-align: center;">การดูแล Sun conure:</h1>
+            <b style="color: #00aea5;">1. การเลือกอาหาร</b><br><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การให้อาหารนกคอนัวร์ไม่ใช่เรื่องยาก พวกมันสามารถกินอะไรได้ค่อนข้างหลากหลาย
+                แต่ของโปรดของพวกมันคือผลไม้ตามฤดูกาลเช่น แอปเปิล มะละกอ กล้วย และส้ม
+                เรายังสามารถให้เมล็ดธัญพืชและผักใบเขียวกับพวกมันได้เช่นกัน ซึ่งรวมถึงข้าวโพดและเมล็ดทานตะวัน
+
+                พิเศษคือในช่วงการเลี้ยงลูกนกของซันคอนัวร์ เราสามารถให้อาหารประเภทโปรตีนมากขึ้นเช่น
+                ขนมปังโฮลเกรนหรือไข่ปรุงสุก เพื่อให้พวกมันมีสารอาหารเพียงพอในการเจริญเติบโต
+            </p><br>
+            <b style="color: #00aea5;">2. สถานที่ในการเลี้ยง</b><br><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กรงสำหรับเลี้ยงซันคอนัวร์เพื่อการเพาะพันธุ์ ควรมีความยาวของกรงประมาณ
+                120-150 เซนติเมตร ความกว้างและความสูงประมาณ 70-100 เซนติเมตร ต้องเป็นกรงที่มีความแข็งแรงพอประมาณ
+                ขนาดของลวดที่ใช้ทำกรงต้องมีขนาดใหญ่(ขนาดลวดเบอร์ 13 เป็นอย่างน้อย) ขนาดความถี่ของซี่ลวดต้องมีความเหมาะสม
+                คือถ้าเลี้ยงในโรงเรือนที่มีตาข่ายล้อมรอบ ก็สามารถใช้กรงที่มีซี่ห่างๆได้ เช่น 1*2 นี้ว หรือ 1*1.5 นิ้ว
+                แต่ถ้าเป็นการเลี้ยงภายนอกโรงเรือน
+                กรงที่ใช้เลี้ยงต้องสามารถป้องกันหนูและงูที่จะเข้าไปทำร้ายนกที่เราเลี้ยงได้
+                คือเราต้องใช้กรงที่มีซี่ลวดถี่ๆนั้นเอง และควรจะมีลิ้นชักสำหรับให้อาหารนกเพื่อป้องกันไม่ไห้นกหลุด
+                หรือบินสวนออกมาในขณะที่เรากำลังให้อาหารด้วย
+                กรงที่ใช้เลี้ยงควรติดตั้งคอนที่ทำด้วยไม้หรือวัสดุอื่นจำนวน 2 อัน
+                ควรติดตั้งไว้ที่ระดับสูงบริเวณปากทางเข้ากล่องไข่ 1 อัน และไว้ที่ระดับต่ำ 1 อัน
+                เพื่อให้นกสามารถกระโดดไปกระโดดมาได้อย่างสะดวก
+            </p><br>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

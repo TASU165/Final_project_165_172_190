@@ -1,0 +1,26 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_a' %}">American shorthair</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_b' %}">Birman</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_c' %}">British shorthair</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_d' %}">Maine coon</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_e' %}">Persian</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_f' %}">Ragdoll</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_g' %}">Russian blue</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_h' %}">Scottish fold</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_i' %}">Sphynx</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br>
+            <h1 style="text-align: center;">แนวทางการเลี้ยงแมวพันธุ์ต่างๆ</h1>
+            <img class="guildpic" src="{% static 'app_general/cat_guide.webp' %}"><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

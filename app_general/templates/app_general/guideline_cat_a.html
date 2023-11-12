@@ -1,0 +1,43 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_cat_a' %}">American shorthair</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_b' %}">Birman</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_c' %}">British shorthair</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_d' %}">Maine coon</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_e' %}">Persian</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_f' %}">Ragdoll</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_g' %}">Russian blue</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_h' %}">Scottish fold</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_i' %}">Sphynx</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/American Shorthair.webp' %}"><br>
+            <h1 style="text-align: center;">พฤติกรรมของ American shorthair:</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แมวอเมริกันช็อตแฮร์ ( American Shorthair ) เป็นมิตร สง่างาม และดูแลง่าย มีหลายจุดที่เหมือนกับแมวบ้าน พันธุ์ขนสั้นทั่วไป 
+                กล่าวได้ว่าแมวอเมริกันช็อตแฮร์นั้นไม่ได้มีลักษณะเด่นเป็นของตัวเอง ในขณะที่แมวขนสั้นพันธุ์อื่น ๆ นั้นจะแสดงลักษณะเด่นเฉพาะของสายพันธุ์ออกมา
+                นี้อาจทำให้เกิดความสับสนเนื่องจาก อเมริกันช็อตแฮร์ มีชื่อเดิมว่า โดเมสติกช็อตแฮร์ ( Domestic Shorthair ) ทั้งที่ความจริงแล้วแมวอเมริกันช็อตแฮร์เป็นสายพันธุ์ของตัวเอง!
+            </p>
+            <h1 style="text-align: center;">การดูแล American shorthair:</h1>
+            <b style="color: #00aea5;">1. สุขภาพ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แม้ว่าอเมริกันช็อตแฮร์จะมีสุขภาพที่ดี แต่ก็มีแนวโน้มที่จะมีปัญหาเล็กน้อย 
+                โดยโรคอ้วนเป็นอาการที่พบได้บ่อยที่สุด มีปัญหาสุขภาพอีก 2 ประการที่ทราบกันดีว่าเกิดกับอเมริกันช็อตแฮร์ คือ สะโพกผิดปกติตามกรรมพันธุ์ ส่งผลต่อบางตัวในสายพันธุ์ 
+                และ โรคหัวใจรูปแบบหนึ่ง ที่เรียกว่า โรคกล้ามเนื้อหัวใจหนาผิดปกติ (hypertrophic cardiomyopathy: HCM) ทำให้ อเมริกันช็อตแฮร์บางตัวมีหัวใจโต 
+                ปัญหาเหล่านี้ส่งผลกระทบต่อแมวเพียงเล็กน้อยเท่านั้น</p><br>
+                <b style="color: #00aea5;">2. กรูมมิ่ง</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อเมริกันช็อตแฮร์ ไม่ได้มีปัญหาเรื่องกรูมมิ่ง จึงไม่ต้องแปรงขนให้เขาบ่อยนัก 
+                    โดยแนะนำให้ใช้แปรงขนละเอียดหรือแปรงขนนุ่มแปรงขนให้อย่างน้อยสัปดาห์ละครั้ง วิธีนี้ช่วยให้ขนของน้องไม่ไปติดตามเฟอร์นิเจอร์ของคุณ และยังช่วยลดโอกาสเกิดก้อนขนอีกด้วย</p><br>
+                <b style="color: #00aea5;">3. การออกกำลังกาย</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อเมริกันช็อตแฮร์ ตามธรรมชาติของเขานั้นมีความกระตือรือร้นในระดับปานกลาง 
+                    ดังนั้นหากไม่ออกกำลังกายให้เพียงพอก็มีแนวโน้มที่จะเป็นโรคอ้วน คุณสามารถช่วยป้องกันปัญหานี้ได้ โดยการเช็กว่าน้องแมวมีของเล่นที่มากพอ อย่างไรก็ตาม น้องแมวนั้นมีบรรพบุรุษเป็นนักล่า 
+                    และพวกเขาชื่นชอบของเล่นแบบโต้ตอบ รวมถึงแสงเลเซอร์ เหมือนกับแมวตัวอื่น ๆ อเมริกันช็อตแฮร์ ชอบที่จะปีนป่าย การมีคอนโดแมวหรือต้นไม้แมวจะช่วยให้ผ้าม่านของคุณปลอดภัย 
+                    ในขณะที่พวกเขาก็จะมีจุดชมวิวและที่นอนที่สมบูรณ์แบบ</p><br>
+                <b style="color: #00aea5;">4. โภชนาการ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เมื่อเทียบกับแมวบ้านทั่วไปส่วนใหญ่ อเมริกันช็อตแฮร์ นั้นไม่ต้องการสารอาหารที่พิเศษกว่า 
+                    </p><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

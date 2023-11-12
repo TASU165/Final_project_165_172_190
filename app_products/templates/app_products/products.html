@@ -1,0 +1,106 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}สินค้า{% endblock %}
+{% load humanize %}
+{% block content %}
+
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-sm-2 prolist">
+            <span style="color:#333333"><i class="fas fa-filter"></i>&nbsp;ตัวกรองสินค้า</span>
+
+            <!--             <a href="{% url 'product_add' %}" class="btn btn-danger mb-4" style="color: white;">Add new Product</a> -->
+            <div class="list-group">
+                <a href="{% url 'products' %}" class="list-group-item list-group-item-action {% if not categ_id %}{% endif %}" style="background-color: #00aea5; color: #fff; border-radius: 0px;">All</a>
+                {% for c in categoryes %}
+                    <a href="{% url 'products' %}?categoryid={{ c.id }}" class="list-group-item list-group-item-action {% if not categ_id|add:'0' == c.id %}{% endif %}" style="background-color: #fff; color: #333333; border-radius: 0px;">{{c.name}}</a>
+                {% endfor %}
+            </div>
+            
+        </div>
+        <div class="col bg-body">
+            <div class="row">
+                <div class="col-lg-15">
+                    <h1 style="border-bottom: 2px solid #00aea5;">รายการสินค้า</h1>
+                    <div class="row">
+                        {% for b in productes %}
+                        <div class="col-lg-2">
+                                <style>
+                                    .card {
+                                        display: flex;
+                                        flex-direction: column;
+                                        height: 100%;
+                                    }
+
+                                    .card-body {
+                                        flex-grow: 1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                    }
+
+                                    .card-body h5 {
+                                        margin-bottom: 30px; /* เพื่อลบระยะห่างด้านล่างของ h5 */
+                                    }
+
+                                    .card-body .d-flex {
+                                        justify-content: space-between;
+                                    }
+                                </style>
+
+                        <div class="card">
+                            {% if b.image %}
+                            <a href="{% url 'detail' slug=b.slug %}">
+                                <img src="{{ b.image.url }}" alt="" class="card-img-top">
+                            </a>
+                            {% endif %}
+                            <div class="card-body" style="font-size: 12px; color:#414141">
+                                <h5><a href="{% url 'detail' slug=b.slug %}" style="text-decoration: none; color:#414141; font-size: 12px;">{{ b.name }}</a></h5>
+                                <div class="d-flex">
+                        <!--             <div>Category:&nbsp;{{ b.category.name }}</div> -->
+                                    <div style="color: #00aea5;">Price:&nbsp;{{ b.price|floatformat:2|intcomma }}&nbsp;บาท</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <br>
+                    <ul class="pagination pagination-links">
+                        {% if productes.has_previous %}
+                            <li class="page-item"><a class="page-link" href="?page={{ productes.previous_page_number }}" style="color: #00aea5;" >Previous</a></li>
+                        {% endif %}
+                    
+                        {% for i in productes.paginator.page_range %}
+                            <li class="page-item {% if productes.number == i %}active{% endif %}">
+                                <a class="page-link" href="?page={{ i }}" style="color: #00aea5;" >{{ i }}</a>
+                            </li>
+                        {% endfor %}
+                    
+                        {% if productes.has_next %}
+                            <li class="page-item"><a class="page-link" href="?page={{ productes.next_page_number }}"  style="color: #00aea5;" >Next</a></li>
+                        {% endif %}
+                    </ul>
+                    
+                    <style>
+                        .pagination-links {
+                            color: #00aea5;
+                        }
+                    
+                        .pagination-links .active a {
+                            color: #000000; /* Change this to the desired color for the active page link */
+                            background-color: #ffffff; /* Change this to the desired background color for the active page link */
+                            border: 1px solid #00aea5; /* Set the border color to black */
+                        }
+                    </style>
+                    
+                    
+                </div>
+                <!-- ส่วนของสินค้าคุณภาพ -->
+                <!-- ... -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

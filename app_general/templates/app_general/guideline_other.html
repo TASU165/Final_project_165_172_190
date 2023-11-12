@@ -1,0 +1,26 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_a' %}">Alpaca</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_b' %}">Ball python</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_c' %}">Bearded dragon</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_d' %}">Caracal</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_e' %}">Emperor scorpion</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_f' %}">Fire salamander</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_g' %}">Leopard gecko</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_h' %}">Tarantula</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_other_i' %}">Fennec fox</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br>
+            <h1 style="text-align: center;">แนวทางการเลี้ยงสัตว์พันธุ์ต่างๆ</h1>
+            <img class="guildpic" src="{% static 'app_general/exotics.jpg' %}"><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

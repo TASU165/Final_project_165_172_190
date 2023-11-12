@@ -1,0 +1,34 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_a' %}">Chinchilla</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_b' %}">Guinea pig</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_c' %}">Hamster</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_d' %}">Hedgehog</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_small_e' %}">Prairie dog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_f' %}">Mini lop rabbit</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_g' %}">Sugar glider</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_h' %}">Japanese pond turtle</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_i' %}">Pygmy marmoset</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/prairie dog.jpg' %}"><br>
+            <h1 style="text-align: center;">การดูแล Prairie dog:</h1>
+            <b style="color: #00aea5;">1. ลักษณะนิสัย</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ถ้าเปรียบแพรี่ ด็อก เป็นเด็ก ก็คือ เป็นลักษณะของเด็กฉลาด แต่ดื้อและซนมาก ชอบวิ่งเล่น แถมยังชอบกัด แทะ ไปเรื่อยอีกต่างหาก การเลี้ยงดูด้วยความรัก ความเอาใจใส่จึงเป็นวิธีการที่ดีที่สุด การที่จะทำตัวดุหรือตี เพื่อสั่งสอนเค้าจะไม่ได้ผล ซ้ำจะทำให้เค้ายิ่งก้าวร้าวมากขึ้นอีกด้วย วิธีที่แนะนำสำหรับการลงโทษสำหรับแพรี่ ด็อก ก็คือ การให้เข้าไปอยู่ในกรง หรือ การงดเล่นด้วย จะได้ผลมากกว่า
+
+                เคล็ดลับของการเอาใจแพรี่ ด็อก แบบที่เรียกว่าได้ใจสุดๆ ก็คือ “การเกา” ใครเจอฤทธิ์ขี้งอนของเจ้าตัวเล็กนี่บ่อยๆ ก็ลองใช้วิธีนี้ง้อดูได้ ว่ากันว่าถึงกับทำให้หลงรักกันเลยทีเดียว</p><br>
+                <b style="color: #00aea5;">2. อาหาร</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ใครจะเลี้ยงแพรี่ ด็อก นี่อาจจะต้องสำรวจกระเป๋าเงินตัวเองบ่อยๆ เพราะอาหารของเจ้าตัวเล็กราคาแพงอยู่ไม่น้อย ไม่ว่าจะเป็นหญ้าแห้งทิโมธี (Thimothy) หรืออาหารเม็ดสำหรับกระต่ายหรือแกสบี้ ผักบางชนิดอย่างเช่น แครอท ผักกาดหอม ก็สามารถให้กินได้บ้างทีละน้อย แต่ไม่ควรให้บ่อย
+
+                    การให้อาหารเม็ดกับแพรี่ ด็อก ก็ต้องมีวิธีให้ที่ถูกต้อง ไม่เช่นนั้นเจ้าตัวเล็กนี่อาจงอนเพราะคิดว่าเราแย่งอาหารเค้าไปก็ได้ โดยปกติการให้อาหารจะต้องให้ทีละชิ้น รอจนเค้ากินหมด ระหว่างที่กินอาหาร เราก็อาจจะเอานิ้วไปแตะ หรือลูบตัว ให้เค้าคุ้นเคยกับมือเรา
+                </p><br>
+            <b style="color: #00aea5;">3. ที่อยู่อาศัย</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; จัดเตรียมกรงขนาดใหญ่หน่อย เพื่อให้สามารถวิ่งเล่นได้บ้าง แล้วนำกรงนั้นไปวางในบริเวณที่เดินผ่านบ่อยๆ ให้เค้าคุ้นเคยกับสิ่งที่เกิดขึ้นในแต่ละวัน อาจมีการปูที่นอนเล็กๆ ให้ เพื่อให้เค้านอนได้สบายขึ้น ทางทีดีควรนำเสื้อของเราใส่เข้าไปในกรงด้วย เจ้าตัวเล็กจะได้คุ้นชินกับกลิ่นของเรา    
+            </p><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

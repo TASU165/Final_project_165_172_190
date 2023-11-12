@@ -1,0 +1,34 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_a' %}">Chinchilla</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_small_b' %}">Guinea pig</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_c' %}">Hamster</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_d' %}">Hedgehog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_e' %}">Prairie dog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_f' %}">Mini lop rabbit</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_g' %}">Sugar glider</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_h' %}">Japanese pond turtle</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_i' %}">Pygmy marmoset</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/guinea.jpg' %}"><br>
+            <h1 style="text-align: center;">การดูแล Guinea pig:</h1>
+            <b style="color: #00aea5;">1. การเลือกกรง</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขนาดกรงควรมีขนาดใหญ่พอที่น้องจะสามารถเดินหรือวิ่งได้ ถ้าขนาดกรงเล็กเกินไปอาจทำให้น้องเครียด และเป็นเรื่องสำคัญที่ขนาดของกรงควรใหญ่พอที่จะให้น้องเดินหรือวิ่งในแนวตรงได้ 
+                ถ้าใช้กรงที่มีตะแกรง ต้องมีที่รองเท้าให้น้องเพราะตะแกรงจะทำให้เท้าน้องที่บอบบางเป็นแผล อย่างร้ายแรงอาจเป็นแผลอักเสบที่อันตรายถึงชีวิตได้
+                กรงควรตั้งอยู่ในที่ที่อากาศถ่ายเทสะดวกและไม่โดนแดดตรงๆ </p><br>
+                <b style="color: #00aea5;">2.อาหารหลัก</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80% ของอาหารที่แกสบี้กินควรเป็นหญ้าแห้ง เช่น หญ้าทิโมธี หญ้าโอ๊ต ย้ำว่าเป็นหญ้าแห้งไม่ใช่อาหารเม็ด เนื่องจากมีปริมาณไฟเบอร์และสารอาหารที่เหมาะสม อีกทั้งหนูแกสบี้ต้องกินของที่แข็งเพียงพอที่จะลับฟันของตนไม่ให้ยาวจนเกินไป จะเป็นหญ้าสดก็ได้แต่จากประสบการณ์และการพูดคุยกับสัตวแพทย์แล้วแนะนำเป็นหญ้าแห้งดีกว่า เนื่องจากหญ้าแห้งเก็บรักษาง่ายอีกทั้งหญ้าสดมีโอกาสปนเปื้อนหรือมีเชื้อแบคทีเรียไม่พึงประสงค์ได้มากกว่าหญ้าแห้ง อ่านเพิ่มเติมเกี่ยวกับ อาหารที่หนูแกสบี้กินได้ รวมถึงอาหารเม็ดแนะนำสำหรับหนูแกสบี้</p><br>
+                <b style="color: #00aea5;">3. ต้องได้รับ Vitamin C ทุกวัน </b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ร่างกายหนูแกสบี้ไม่สามารถสังเคราะห์  วิตามิน C เองได้ดังนั้นน้องต้องได้รับ วิตามินซี เสริม หรือ กินอาหารเม็ดที่มีปริมาณ วิตามินซีเพียงพอ รวมทั้งควรกินอาหารเสริมบ้างเป็นครั้งคราว </p><br>
+                <b style="color: #00aea5;">4. ไม่จำเป็นต้องอาบน้ำบ่อย</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปกติน้องแกสบี้ จะเป็นสัตว์ที่รักสะอาดอยู่ประมาณนึงแล้ว น้องสามารถจัดการทำความสะอาดตัวเองได้ค่อนข้างดีอยู่แล้ว
+                    ถ้ารู้สึกว่าน้องมีกลิ่นเริ่มเหม็นให้ทำความสะอาดกรงบ่อยๆดูก่อน เพราะกรงอาจสกปรกจนทำให้น้องมีกลิ่น
+                    การอาบน้ำบ่อยๆและเป่าตัวไม่แห้ง อาจทำให้น้องป่วยได้ ถ้าอยากทำความสะอาดสามารถเช็ดตัวน้องแทนก่อนได้ ด้วยทิชชู่เปียกสัตว์เลี้ยง 
+                    โดยเฉลี่ยแล้วอาบน้ำปีละ 1-2 ครั้งก็เพียงพอแล้ว</p><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

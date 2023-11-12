@@ -1,0 +1,42 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_a' %}">American shorthair</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_cat_b' %}">Birman</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_c' %}">British shorthair</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_d' %}">Maine coon</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_e' %}">Persian</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_f' %}">Ragdoll</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_g' %}">Russian blue</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_h' %}">Scottish fold</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_cat_i' %}">Sphynx</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/BIRMAN2.jpg' %}"><br>
+            <h1 style="text-align: center;">พฤติกรรมของ Birman:</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แมวเบอร์แมน ( Birman ) หรืออีกชื่อคือ แมวศักดิ์สิทธิ์ของพม่า เป็นแมวสายพันธุ์ขนยาวขนาดใหญ่ที่มีโครงสร้างกระดูกที่หนา 
+                แมวเหล่านี้ส่วนใหญ่มีน้ำหนักเกิน 2.7 กก. เมื่อถึงวัยผู้ใหญ่ แมวเบอร์แมนมักจะเงียบขรึม กับคนแปลกหน้าจะขี้อายเล็กน้อย และพวกเขาอาจเก็บตัวแม้กับคนที่พวกเขารู้จักดี 
+                นอกจากนี้ยังมีแนวโน้มที่จะติดเจ้าของคนเดียว ดังนั้นหากคุณเป็นคนที่กำลังมองหาแมวผู้ซื่อสัตย์ที่รักคุณเหนือสิ่งอื่นใด แมวเบอร์แมนอาจเหมาะกับคุณ! แมวเบอร์แมนมีขนนุ่มดุจแพรไหม 
+                สีเปลือกไข่ สีครีม หน้ามีจุดสีเข้มคล้ายกับ แมววิเชียรมาศ พร้อมกับ “นวม” สีขาวหรือรองเท้าสโนว์ชู ดวงตาสีฟ้าที่สวยงามเป็นอีกหนึ่งลักษณะพิเศษของแมวสายพันธุ์เบอร์แมน
+            </p>
+            <h1 style="text-align: center;">การดูแล Birman:</h1>
+            <b style="color: #00aea5;">1. สุขภาพ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แม้ว่า เบอร์แมน จะมีชื่อเสียงในด้านสุขภาพโดยรวมที่ดี แต่แมวสายพันธุ์นี้ 
+                มีแนวโน้มที่จะเป็นโรคอ้วนได้ หมั่นดูแลแมวของคุณให้กระฉับกระเฉง และตรวจสอบให้แน่ใจว่า คุณได้ให้อาหารที่เหมาะสม และมีโปรตีนสูงเพื่อช่วยให้แมวของคุณรักษาน้ำหนักที่ดีต่อสุขภาพ</p><br>
+                <b style="color: #00aea5;">2. กรูมมิ่ง</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แม้ว่า เบอร์แมนจะมีขนยาว แต่พวกเขาค่อนข้างดูแลง่ายเมื่อเทียบกับแมวขนยาวสายพันธุ์อื่น ๆ 
+                    ขนของ เบอร์แมนนั้นละเอียด และนุ่มสลวย มีขนชั้นเดียว การแปรงขนเป็นประจำ ( อย่างน้อยวันละครั้ง ) จะช่วยให้ขนของแมวตัวนี้อยู่ในสภาพดี และมอบประสบการณ์แห่งความผูกพันอันน่าพึงพอใจให้กับคุณทั้งคู่
+                    นอกจากนี้ คุณยังอาจต้องแปรงฟันแมว และอาจต้องตัดเล็บให้เสมอ</p><br>
+                <b style="color: #00aea5;">3. การออกกำลังกาย</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เบอร์แมน ต้องการการออกกำลังกายอย่างสม่ำเสมอ 
+                    และคุณอาจต้องช่วยให้พวกเขาออกกำลังกายด้วย แมวเหล่านี้ชอบนั่งเล่น อย่างไรก็ตามพวกเขาจะเล่นของเล่นอย่างมีความสุข เมื่อได้รับการสนับสนุนให้ทำเช่นนั้น ต้นไม้แมวเหมาะสำหรับการงีบหลับ 
+                    แต่ก็จำเป็นสำหรับการยืดเส้นยืดสาย และปีนป่าย ของเล่นที่ผสม Catnip สามารถดึงเอาด้านขี้เล่นของแมวที่ปกติสงบเสงี่ยมออกมาได้!</p><br>
+                <b style="color: #00aea5;">4. โภชนาการ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เบอร์แมน ไม่มีข้อกำหนดด้านโภชนาการพิเศษใด ๆ อย่างไรก็ตาม พวกเขาจะเจริญเติบโตได้ดีด้วยอาหารที่มีโปรตีนสูง 
+                    </p><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

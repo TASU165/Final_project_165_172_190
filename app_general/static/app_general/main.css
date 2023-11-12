@@ -1,0 +1,365 @@
+/* mitr-300 - latin_thai */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('fonts/mitr-v11-latin_thai-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mitr-regular - latin_thai */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('fonts/mitr-v11-latin_thai-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: "Mitr", sans-serif;
+}
+
+/*.navbar navbar-expand-lg bg-light ul {
+  color: #00aea5;
+}*/
+
+h1 {
+  color: #00aea5;
+
+}
+
+.container {
+  width: 1500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.colxxx {
+  background-image: url('./Untitled-1.jpg');
+  height: 100vh;
+  /*ไม่ได้ใช้ (Test bg_col)*/
+}
+
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.topcolright {
+  color: red;
+  margin-left: 320px;
+}
+
+.col-sm-3 {
+  background-color: #00aea5;
+  border-radius: 25px;
+  margin-left: 12px;
+  margin-bottom: auto;
+
+}
+
+.hmbr {
+  background-color: #000000;
+  border-radius: 0px;
+  margin-left: 0px;
+}
+
+.col-sm-4 {
+
+  text-align: center;
+
+}
+
+.col-sm-12 {
+  background-color: #00aea5;
+  border-radius: 10px;
+}
+
+.col {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+input[type="search"]::placeholder {
+
+  /* Firefox, Chrome, Opera */
+  text-align: right;
+}
+
+.blog1img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+a {
+  color: white;
+}
+
+.bloglefttexthead {
+  color: #fff;
+  font-size: x-large;
+}
+
+.bloglefttext {
+  color: #fff;
+}
+
+.user_optio_box {
+  position: relative;
+  /* ตั้งค่าให้เป็น fixed positioning */
+  top: 100 px;
+  bottom: -24px;
+  /* จะต้องปรับค่า top ให้เหมาะสมกับตำแหน่งที่คุณต้องการให icon อยู่ */
+  left: 580px;
+  /* ตั้งค่าให้ icon อยู่ทางขวา */
+  margin: 0 auto;
+}
+
+.user_optio_box a {
+  font-size: 24px;
+  color: #000000;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.nav-link {
+  color: white;
+}
+
+.DogSP {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 300px;
+  height: 200px;
+}
+
+.blogleftguild {
+  color: black;
+  font-size: large;
+  text-align: center;
+}
+
+.guildpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 300px;
+}
+
+.col-sm-2 {
+  background-color: #00aea5;
+  border-radius: 25px;
+  margin-left: 12px;
+  margin-bottom: auto;
+}
+
+.gcontent {
+  text-align: left;
+}
+
+.guildline_menu {
+  color: white;
+  text-decoration: underline;
+  font-size: large;
+  text-align: center;
+}
+
+.prolist {
+  background-color: #ffffff;
+  border-radius: 0px;
+  margin-top: 0px;
+}
+
+.prolists {
+  background-color: #ffffff;
+}
+
+.gcontent {
+  text-align: left;
+}
+
+/* เพิ่มสีพื้นหลังและขนาดข้อความใน div.col-sm-6 */
+.col-sm-6 {
+  padding: 20px;
+}
+
+
+/* ปรับขนาดและรูปแบบของปุ่ม */
+.btn1-y {
+  font-size: 16px;
+  padding: 10px 20px;
+  transform: translateY(25px);
+}
+
+.btn1-y i.fa-shopping-cart {
+  font-size: 20px;
+  /* ปรับขนาดตามที่คุณต้องการ */
+}
+
+.btn-outline1-secondary {
+  color: #6c757d;
+}
+
+.btn-info1 {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-info1:hover {
+  background-color: #0056b3;
+  color: #fff;
+  /* ปรับสีตัวอักษรเป็นสีขาว */
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* สร้างปุ่มที่มีลักษณะเป็นข้อความโดยตรง */
+.buttonhello1-text {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transform: translateY(27px);
+}
+
+.buttonhello1-text:hover {
+  color: inherit;
+  text-decoration: none;
+  /* ลบ underline เวลา hover */
+}
+
+/* กำหนดสีข้อความขณะ hover */
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+  /* กำหนดสีข้อความเมื่อ hover ที่นี่ */
+}
+
+/* กำหนดสีข้อความขณะ active (ถูกเลือก) */
+.navbar-nav .nav-item.active .nav-link {
+  color: #ffffff;
+  /* กำหนดสีข้อความเมื่อ active ที่นี่ */
+}
+
+.card {
+  height: 100%;
+  /* ความสูงที่คุณต้องการ สามารถปรับค่าตามต้องการ */
+}
+
+.card-img-top {
+  object-fit: cover;
+  /* ให้รูปภาพทำการ cover พื้นที่ทั้งหมดของ card-img-top */
+  height: 200px;
+  /* ความสูงของรูปภาพ สามารถปรับค่าตามต้องการ */
+}
+
+/* styles.css or your external stylesheet file */
+.btn-outline-custom {
+  color:  	#ea4335;
+  border-color:  	#ea4335;
+}
+
+.btn-outline-custom:hover {
+  background-color:  	#ea4335;
+  border-color:  	#ea4335;
+  color: #fff;
+}
+
+/* styles.css or your external stylesheet file */
+.triangle-icon {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.triangle-up,
+.triangle-down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.triangle-up {
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #000 transparent;
+}
+
+.triangle-down {
+  border-width: 10px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+}

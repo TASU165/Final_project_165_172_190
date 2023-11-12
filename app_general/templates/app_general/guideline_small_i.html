@@ -1,0 +1,35 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_a' %}">Chinchilla</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_b' %}">Guinea pig</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_c' %}">Hamster</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_d' %}">Hedgehog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_e' %}">Prairie dog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_f' %}">Mini lop rabbit</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_g' %}">Sugar glider</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_h' %}">Japanese pond turtle</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_small_i' %}">Pygmy marmoset</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/Pygmy Marmoset.jpg' %}"><br>
+            <h1 style="text-align: center;">การดูแล Pygmy marmoset:</h1>
+            <b style="color: #00aea5;">1. อาหาร</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ลิงมาโมเสทชอบกินยางไม้ แมลง และผลไม้ โดยใช้ด้านล่างฟันที่มีลักษณะแหลมๆ เจาะรูต้นไม้เพื่อกินยางไม้ แต่ก็สามารถทานอาหารลิงทั่วไปได้ตามปกติเช่นกัน      
+            </p><br>
+            <b style="color: #00aea5;">2.สถานที่เลี้ยง</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หากเลี้ยงในกรง กรงควรมีขนาดสูง ต้องมีต้นไม้ กิ่งไม้หลายต้น เพื่อให้ลิงมาโมเสทสามารถไต่และกระโดดไปมาได้ บ้านของลิงมาโมเสทควรทำจากไม้ เพราะเนื่องจากลิงมาโมเสทชอบกัดแทะ รวมถึงกล่องใส่อาหารก็ควรทำจากไม้ด้วยเช่นกัน
+                
+                
+            </p><br>
+            <b style="color: #00aea5;">3. แสงเป็นสิ่งจำเป็น </b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หากเลี้ยงในที่ร่มไม่มีแสงแดดจะทำให้ลิงมาโมเสทเป็นโรคกระดูกอ่อน กรงที่เลี้ยงควรมีแสงแดดส่อง หรือหากเลี้ยงในตึกก็ควรมีไฟยูวีเปิดให้ และลิงมาโมเสทเป็นลิงที่ไม่ชอบอากาศเย็น ในกรงควรมีอุณหภูมิเฉลี่ยอยู่ที่ประมาณ 30 องศาเซลเซียส และควรมีไฟที่ให้ความอบอุ่นไว้ให้ด้วยสักหนึ่งหลอด
+            </p><br>
+            <b style="color: #00aea5;">4. สุขภาพ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ลิงมาโมเสทไม่เหมือนสัตว์ทั่วไปอย่างสุนัข แมว หมู ยกตัวอย่างเช่น ถ้าคนเลี้ยงเป็นไข้ ลิงมาโมเสทสามารถติดไข้จากมนุษย์ได้ หรือคนที่เลี้ยงก็สามารถติดไข้จากลิงมาโมเสทได้ด้วยเช่นกัน เพราะฉนั้นต้องระวังเรื่องความสะอาดให้ดี ลิงมาโมเสทไม่ค่อยติดมนุษย์เหมือนกับสุนัขหรือแมว และไม่ค่อยสนใจทำตามมาตรฐานที่มนุษย์คิดเท่าไหร่นัก ซึ่งคนเลี้ยงอาจต้องเข้าใจว่าหากสอนให้เข้าห้องน้ำหรือสอนให้ขับถ่ายเป็นที่ ลิงมาโมเสทอาจจะไม่สนใจทำก็ได้ และหากปล่อยลิงมาโมเสทวิ่งเล่นในบ้านอาจทำให้เอกสารหรือสิ่งของในบ้านเกิดความเสียหายได้ง่าย เพราะฉนั้นโปรดคิดให้รอบคอบก่อนที่จะเลี้ยงและควรแน่ใจว่าอยากเลี้ยงลิงมาโมเสทอย่างจริงใจก่อน
+            </p><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

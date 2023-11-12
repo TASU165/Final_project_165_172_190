@@ -1,0 +1,60 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_a' %}">Budgie</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_b' %}">Canary</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_c' %}">Crimson rosella</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_d' %}">Finch</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_e' %}">Galah</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_f' %}">Lovebird</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_g' %}">Rainbow lorikeet</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_bird_h' %}">Scarlet macaw</a>
+            </h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_i' %}">Sun conure</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/macaw.jpg' %}"><br>
+            <h1 style="text-align: center;">พฤติกรรมของ Scarlet macaw:</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                พฤติกรรมทั่วไปของ Scarlet macaw
+
+                นก Scarlet macaw เป็นนกแก้วขนาดใหญ่ที่มีถิ่นกำเนิดในอเมริกากลางและอเมริกาใต้
+                พวกมันมีขนสีแดงสดใสและเป็นที่รู้จักกันดีในเรื่องเสียงร้องที่ไพเราะ นก Scarlet macaw
+                เป็นนกสังคมและมักพบเป็นฝูงขนาดใหญ่ พวกมันชอบกินผลไม้ ถั่ว และเมล็ดพืช
+
+                สังคม: นก Scarlet macaw เป็นนกสังคมและมักพบเป็นฝูงขนาดใหญ่ พวกมันสื่อสารกันโดยใช้เสียงร้องและภาษากาย
+                พวกมันมักรวมตัวกันเป็นฝูงเพื่อหาอาหารหรือหาที่พักพิง
+                เสียงร้อง: นก Scarlet macaw เป็นที่รู้จักกันดีในเรื่องเสียงร้องที่ไพเราะ
+                พวกมันสามารถส่งเสียงร้องได้หลากหลายรูปแบบ รวมถึงเสียงร้องเตือน เสียงร้องสื่อสาร และเสียงร้องเพลง
+            </p>
+            <h1 style="text-align: center;">การดูแล Scarlet macaw:</h1>
+            <b style="color: #00aea5;">1. การเลือกอาหาร</b><br><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สำหรับนกแก้วมาคอร์ในป่าจะกินเมล็ดพืช ผลไม้ และถั่วหลากหลายชนิด
+                แต่นกแก้วมาคอร์ที่เป็นสัตว์เลี้ยง อาหารเม็ดควรเป็นอาหารพื้นฐานของนกแก้วมาคอร์ และควรเสริมผัก
+                ผลไม้สดเข้าไปในอาหารแต่ละมื้อ เมล็ดพืชและถั่วไม่ควรเกิน 10% ของอาหาร เนื่องจากมีไขมันที่สูงเกินไป
+
+                หากนกแก้วมาคอร์กินในปริมาณที่มากจะส่งผลเสียต่อสุขภาพช่วงเวลาที่เหมาะสมต่อการให้อาหารนกแก้วมาคอร์ คือ
+                ในช่วงเช้าและช่วงเย็น อาหารที่ควรหลีกเลี่ยง เนื่องจากเป็นพิษต่อนกแก้วมาคอร์ ได้แก่ ช็อกโกแลต อะโวคาโด
+                คาเฟอีน เกลือ หรืออาหารที่ปราศจากน้ำตาล สิ่งเหล่านี้นกแก้วมาคอร์ไม่สามารถกินได้
+            </p><br>
+            <b style="color: #00aea5;">2. สถานที่ในการเลี้ยง</b><br><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นกแก้วมาคอร์ต้องหารกรงที่มีขนาดใหญ่และแข็งแรงทนทาน
+                สำหรับนกแก้วมาคอร์ที่มีขนาดเล็กกรงนกควรมีขนาดความสูงขั้นต่ำ 90 cm
+                และสำหรับนกแก้วมาคอร์ขนาดใหญ่ควรมีขนาดความสูงกรงขั้นต่ำ 150 cm
+                กรงจะต้องมีความแข็งแรงมากพอที่จะทนต่อการกัดแทะด้วยจงอยปากของนกแก้วมาคอร์
+
+                กรงนกที่ทำมาจากเหล็กดัดและสแตนเลสถือเป็นกรงที่ดีเหมาะสำหรับนกแก้วมาคอร์นอกจากนี้ควรจัดหาของเล่นนกแบบไม้ที่หลากหลายชนิดที่ปลอดภัยทำทำจากสีธรรมชาติไม่เป็นอันตรายต่อนกแก้วมาคอร์
+                เพื่อให้นกได้กัดแทะ เคี้ยวของเล่น หรือของเล่นสำหรับให้นกได้ปีนป่ายขึ้นไป
+                จะช่วยทำให้นกได้ออกกำลังกายเป็นการส่งเสริมสุขภาพนกที่ดี
+            </p><br>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

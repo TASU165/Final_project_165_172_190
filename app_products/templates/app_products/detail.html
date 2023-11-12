@@ -1,0 +1,27 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}รายละเอียดสินค้า{% endblock %}
+{% load humanize %}
+{% block content %}
+<div class="container">
+<div class="row" style="margin-top: 30px;">
+    <div class = "col-lg-2">
+        {% if product.image %}
+        <img src="{{ product.image.url }}" class="img-fluid" alt="">
+        {% endif %}
+    </div>
+    <div class="col-lg-9">
+        <h1>{{  product.name }}</h1>
+        <div>Category : {{ product.category }}</div>
+        <div>Price : {{ product.price|floatformat:2|intcomma }} บาท</div>
+        <div>Description : {{ product.description }}</div>
+    </div>
+</div>
+<br>
+<div class="text-end">
+    <a href="{% url 'cart_add' slug=product.slug %}" class="btn" style="background-color: #00aea5; color: #fff;">Add to cart</a>
+    <a href="{% url 'products' %}" class="btn btn-danger" role="button">Back</a>
+
+</div>
+
+</div>
+{% endblock %}

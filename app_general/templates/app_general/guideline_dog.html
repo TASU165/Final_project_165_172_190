@@ -1,0 +1,26 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Beagle' %}">Beagle</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Chihuahua' %}">Chihuahua</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Corgi' %}">Corgi</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Golden_retriever' %}">Golden-retriever</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_German_shepherd' %}">German-shepherd</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Siberian_Husky' %}">Siberian-husky</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Shih_tzu' %}">Shih-tzu</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Dalmatian' %}">Dalmatian</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_dog_Samoyed' %}">Samoyed</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br>
+            <h1 style="text-align: center;">แนวทางการเลี้ยงสุนัขพันธุ์ต่างๆ</h1>
+            <img class="guildpic" src="{% static 'app_general/dog_guide.jpg' %}"><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

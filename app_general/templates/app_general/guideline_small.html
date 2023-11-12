@@ -1,0 +1,26 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_a' %}">Chinchilla</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_b' %}">Guinea pig</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_c' %}">Hamster</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_d' %}">Hedgehog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_e' %}">Prairie dog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_f' %}">Mini lop rabbit</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_g' %}">Sugar glider</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_h' %}">Japanese pond turtle</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_i' %}">Pygmy marmoset</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br>
+            <h1 style="text-align: center;">แนวทางการเลี้ยงสัตว์ขนาดเล็กพันธุ์ต่างๆ</h1>
+            <img class="guildpic" src="{% static 'app_general/hams.webp' %}"><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

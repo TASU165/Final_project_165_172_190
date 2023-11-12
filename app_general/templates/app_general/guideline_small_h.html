@@ -1,0 +1,35 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_a' %}">Chinchilla</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_b' %}">Guinea pig</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_c' %}">Hamster</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_d' %}">Hedgehog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_e' %}">Prairie dog</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_f' %}">Mini lop rabbit</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_g' %}">Sugar glider</a></h1>
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_small_h' %}">Japanese pond turtle</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_small_i' %}">Pygmy marmoset</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/Turtle.jpg' %}"><br>
+            <h1 style="text-align: center;">การดูแล Japanese pond turtle:</h1>
+            <b style="color: #00aea5;">1. อาหาร</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Japanese pond turtle จัดเป็นเต่าที่เลี้ยงง่ายและกินไม่เลือกทั้งพืชและสัตว์ มีอาหารสำเร็จรูปหลายยี่ห้อวางขายให้เลือกใช้ ทั้งของที่ผลิตในประเทศและของนำเข้า ข้อเสียคือราคา ค่อนข้างสูง เหมาะสำหรับลูกเต่าหรือเต่าที่ยังมีขนาดเล็ก เพราะกินไม่เยอะนัก แต่เมื่อโตขึ้นแล้วจะประหยัดค่าอาหาร โดยการเปลี่ยนไปให้ผักบุ้งเป็นหลัก และใช้อาหารเม็ดเสริม ก็ได้เช่นกัน      
+            </p><br>
+            <b style="color: #00aea5;">2.สถานที่เลี้ยง</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เนื่องจากเป็นสัตว์ครึ่งบกครึ่งน้ำ ดังนั้น จึงต้องมีพื้นที่แห้งให้มันได้ขึ้นมาผึ่งตัวบนบกบ้าง มีการเปลี่ยนน้ำทุกอาทิตย์ ไม่ต่างจากปลาหรือสัตว์น้ำอื่นๆ เพราะมันจะขับถ่ายของเสียลงในน้ำ ยิ่งเต่าตัวใหญ่มากเท่าไรก็ยิ่งต้องเปลี่ยนน้ำบ่อยเท่านั้น ไม่อย่างนั้นแล้วเต่าอาจไม่กินอาหารและเกิดอาการป่วยตามมา
+                
+                
+            </p><br>
+            <b style="color: #00aea5;">3. แดดอ่อนๆเป็นสิ่งจำเป็น </b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สัตว์เลือดเย็นพวกนี้จำเป็นต้องได้รับแสงแดดอ่อนๆ บ่อยๆ เพื่อให้มันได้รับวิตามิน และกระตุ้นระบบการทำงานในร่างกาย มิฉะนั้นแล้วเต่าจะอ่อนแอลงเรื่อยๆ แต่ห้ามนำเต่า ไปตากแดดจัดๆ หรือนำไปวางกลางแจ้งโดยไม่มีที่หลบแสงโดยเด็ดขาด เพราะอาจทำให้ อุณหภูมิในตัวเต่าสูงขึ้นจนตาย เพราะความร้อนได้
+            </p><br>
+            <b style="color: #00aea5;">4. สุขภาพ</b><br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หากตู้เลี้ยงสกปรก อาหารเต่าคุณภาพต่ำ หรือ ที่อยู่ไม่เหมาะสม อาจทำให้เกิดปัญหาสุขภาพตามมา อย่าง โรคตาติดเชื้อจากแบคทีเรีย กระดองนิ่ม เกิดจากการติดเชื้อเกี่ยวกับระบบทางเดินหายใจ ควรรีบพาไปพบกับสัตว์แพทย์ เพื่อทำการรักษาและขอคำแนะนำเพิ่มเติม
+            </p><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

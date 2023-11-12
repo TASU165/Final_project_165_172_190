@@ -1,0 +1,123 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}ตะกร้าสินค้า{% endblock %}
+{% load humanize %}
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+.table {
+    border: none;
+    border-color: transparent;
+}
+
+.table th,
+.table td {
+    border: none;
+}
+</style>
+<div class="container" >
+    <div class="row" style="margin-top: 30px;">
+
+      <p class="display-4 text-center" style="font-size: 28px; color: #00aea5;">ตะกร้าสินค้า</p>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="" style="width: 80%; color:#00aea5">Name</th>
+                    <th class="text-center" style="color: #00aea5">Quantity</th>
+                    <th class="text-center" style="color: #00aea5">Price(Baht)</th>
+                    <th class="text-center" style="color: #00aea5">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in cart_items %}
+                <tr>
+                    <td class="">
+                        <a href="{% url 'detail' slug=c.slug %}" style="color: #333333">
+                            {{ c.name }}
+                        </a>
+                    </td>
+                    <td class="text-center" style="color: #333333">
+                        <a href="{% url 'cart_add' slug=c.slug %}" class="triangle-icon" style="color: #333333">
+                            <div class="triangle-up"></div>
+                        </a>
+                        {{ c.qty }}
+                        <a href="{% url 'cart_reduce' slug=c.slug %}"
+                            class="{% if c.qty == 0 %} disabled {% endif %} triangle-icon">
+                            <div class="triangle-down"></div>
+                        </a>
+
+                    </td>
+                    <td class="text-center" style="color: #333333">{{ c.price|floatformat:2|intcomma }}</td>
+                    <td class="text-center" style="color: #333333">
+                        <a href="{% url 'cart_delete' slug=c.slug %}" class="text-danger"><i
+                                class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h3 class="text-end" style="font-size: 15px;">Total price: {{ total_price }} Baht</h3>
+
+        <div class="d-flex justify-content-end">
+          <a href="{% url 'products' %}" class="btn btn-outline-primary btn-sm "style="margin-right: auto;">Back</a>
+          <button onclick="openForm()" class="btn btn-sm" style="background-color: #00aea5; color: #fff;">Confirm</button>&nbsp;
+          <a href="{% url 'delete_all' %}" class="btn btn-sm btn-danger ">Clear</a>
+        </div>
+        
+      
+
+        <style>
+            #overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                justify-content: center;
+                align-items: center;
+            }
+
+            #form-container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+            }
+        </style>
+        <body>
+    
+          <div id="overlay">
+            <div id="form-container">
+              <h2>Confirm order</h2>
+              <form>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="1" cols="50" required></textarea><br><br>
+                <label for="address">City:</label>
+                <textarea id="address" name="address" rows="1" cols="50" required></textarea><br><br>
+                <label for="address">Province:</label>
+                <textarea id="address" name="address" rows="1" cols="50" required></textarea><br><br>
+                <label for="address">Zipcode:</label>
+                <textarea id="address" name="address" rows="1" cols="50" required></textarea><br><br>
+                <a href="{% url 'delete_all' %}" class="btn btn-success">Submit</a>
+                <button type="button" onclick="closeForm()" class="btn btn-danger">Close</button>
+              </form>
+            </div>
+          </div>
+    
+          <script>
+            function openForm() {
+              document.getElementById("overlay").style.display = "flex";
+            }
+    
+            function closeForm() {
+              document.getElementById("overlay").style.display = "none";
+            }
+          </script>
+    
+        </body>
+    </div>
+</div>
+
+{% endblock %}

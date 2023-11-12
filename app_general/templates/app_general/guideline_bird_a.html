@@ -1,0 +1,53 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}แนวทางการเลี้ยง{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col_under_mainpic"><br><br></div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h1 class="blogleftguild"><a class="blogleftguild" href="{% url 'guideline_bird_a' %}">Budgie</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_b' %}">Canary</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_c' %}">Crimson rosella</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_d' %}">Finch</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_e' %}">Galah</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_f' %}">Lovebird</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_g' %}">Rainbow lorikeet</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_h' %}">Scarlet macaw</a></h1>
+            <h1 class="blogleftguild"><a href="{% url 'guideline_bird_i' %}">Sun conure</a></h1>
+        </div>
+        <div class="col bg-body-secondary">
+            <br><img class="guildpic" src="{% static 'app_general/budgie.jpg' %}"><br>
+            <h1 style="text-align: center;">พฤติกรรมของ Budgie:</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นกหงส์หยกเป็นนกที่รักสะอาด
+                นกหงส์หยกจะใช้เวลาส่วนใหญ่ในการทำความสะอาดตัวเอง โดยนกหงส์หยกจะทำความสะอาดตัวเองโดยการเลียขนและปีก
+                นกหงส์หยกจึงมีขนที่สะอาดและสวยงามอยู่เสมอและเป็นนกที่ร่าเริงเป็นนกที่ชอบออกกำลังกายและเล่นสนุก
+                นกหงส์หยกจึงชอบบินเล่นและกระโดดไปมาภายในกรงนกหงส์หยกเป็นนกที่ฉลาด สามารถเรียนรู้สิ่งต่างๆ
+                ได้อย่างรวดเร็ว จึงสามารถฝึกให้ทำตามคำสั่งต่างๆ ได้ เช่น บินมาหา เกาะคอน เป็นต้น
+            </p>
+            <h1 style="text-align: center;">การดูแล Budgie:</h1>
+            <b style="color: #00aea5;">1. การเลือกอาหาร</b><br><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นกหงส์หยกเป็นนกกินเมล็ดพืชเป็นหลัก โดยอาหารหลักของนกหงส์หยกได้แก่ เมล็ดเร็ป
+                เมล็ดแคนารี และเมล็ดทานตะวัน เป็นต้น นอกจากนี้ นกหงส์หยกยังกินพืชผักใบเขียว เม็ดกรวดทราย
+                และน้ำสะอาดอีกด้วยนอกจากนี้ ควรเลือกอาหารสำหรับนกหงส์หยกที่มีสีสันสดใส
+                เนื่องจากนกหงส์หยกชอบกินอาหารที่มีสีสันสดใส
+                สำหรับนกหงส์หยกที่มีอายุน้อยหรืออยู่ระหว่างการเจริญเติบโต ควรให้อาหารที่มีปริมาณโปรตีนสูง
+                สำหรับนกหงส์หยกที่มีอายุมาก ควรให้อาหารที่มีปริมาณโปรตีนต่ำลง
+            </p><br>
+            <b style="color: #00aea5;">2. สถานที่ในการเลี้ยง</b><br><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สถานที่ในการเลี้ยงนกหงส์หยก ควรเป็นสถานที่ที่ปลอดภัย อบอุ่น สะอาด
+                และเงียบสงบ โดยสถานที่เลี้ยงนกหงส์หยกที่เหมาะสมควรมีดังนี้
+                ขนาดของกรง กรงสำหรับเลี้ยงนกหงส์หยกควรมีขนาดกว้างอย่างน้อย 16 นิ้ว ยาว 30 นิ้ว และสูง 16 นิ้ว
+                เพื่อให้นกหงส์หยกมีพื้นที่เพียงพอสำหรับบินเล่นและออกกำลังกาย
+                นอกจากนี้ ควรทำความสะอาดกรงนกหงส์หยกสัปดาห์ละครั้ง เพื่อสุขอนามัยที่ดีของนกหงส์หยก
+                ข้อควรระวังในการเลือกสถานที่เลี้ยงนกหงส์หยก
+                ไม่ควรวางกรงนกหงส์หยกไว้ใกล้กับเครื่องใช้ไฟฟ้าหรืออุปกรณ์ที่มีเสียงดัง
+                เนื่องจากอาจทำให้นกหงส์หยกเครียดหรือตกใจได้
+                ไม่ควรวางกรงนกหงส์หยกไว้ใกล้กับสัตว์เลี้ยงอื่นๆ เนื่องจากอาจทำให้นกหงส์หยกตกใจหรือถูกทำร้ายได้
+            </p><br>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

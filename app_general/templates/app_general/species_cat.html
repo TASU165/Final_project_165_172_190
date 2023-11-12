@@ -1,0 +1,80 @@
+{% extends 'app_general/components/base.html' %}
+{% block site_title %}สายพันธุ์สุนัข{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container"><br><br>
+    <div class="col-sm-12" style="text-align: center; color:white;">
+        <div>
+            <h2>สายพันธุ์แมว</h1>
+        </div>
+    </div>
+    <div class="col-sm-12 bg-body-secondary">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/American Shorthair.webp' %}">
+            </div>
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/BIRMAN2.jpg' %}">
+            </div>
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/british shorthair.jpg' %}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>American shorthair</h1>
+            </div>
+            <div class="col-sm-4">
+                <h2>Birman</h1>
+            </div>
+            <div class="col-sm-4">
+                <h2>British shorthair</h1>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/Maine Coon.jpg' %}">
+            </div>
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/Persian.jpg' %}">
+            </div>
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/ragdoll.jpg' %}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Maine coon</h1>
+            </div>
+            <div class="col-sm-4">
+                <h2>Persian</h1>
+            </div>
+            <div class="col-sm-4">
+                <h2>Ragdoll</h1>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/Russian Blue.jpg' %}">
+            </div>
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/Scottish Fold.jpg' %}">
+            </div>
+            <div class="grid-item">
+                <img class="DogSP" src="{% static 'app_general/Sphynx cat.jpg' %}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Russian blue</h1>
+            </div>
+            <div class="col-sm-4">
+                <h2>Scottish fold</h1>
+            </div>
+            <div class="col-sm-4">
+                <h2>Sphynx</h1>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
